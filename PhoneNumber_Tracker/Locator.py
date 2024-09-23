@@ -68,7 +68,7 @@ def menu():
 
 def locate_phone_number():
     print(Fore.BLUE + "\nLocate Phone Number:")
-    number = input("Enter phone number in international format (e.g., +123456789): ")
+    number = +919845649992
     new_number = phonenumbers.parse(number)
     location = phonenumbers_geocoder.description_for_number(new_number, "en")
     print(f"\nLocation based on phone number: {Fore.GREEN}{location}{Style.RESET_ALL}")
